@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.php.debug.core.launching.webPageLaunch">
+<booleanAttribute key="auto_generated_url" value="false"/>
+<stringAttribute key="base_url" value="http://172.17.0.2/index.php"/>
+<stringAttribute key="debugOutputEncoding" value="UTF-8"/>
+<stringAttribute key="debugPages" value="debugAllPages"/>
+<stringAttribute key="debugTransferEncoding" value="UTF-8"/>
+<stringAttribute key="file_name" value="/oc-server3/htdocs/index.php"/>
+<booleanAttribute key="firstLineBreakpoint" value="true"/>
+<stringAttribute key="name" value="Default PHP Web Server"/>
+<stringAttribute key="org.eclipse.debug.core.source_locator_id" value="org.eclipse.php.debug.core.sourceLookupDirector.php"/>
+<stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;sourceLookupDirector&gt;&#10;&lt;sourceContainers duplicates=&quot;false&quot;&gt;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;project name=&amp;quot;oc-server3&amp;quot; referencedProjects=&amp;quot;false&amp;quot;/&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.project&quot;/&gt;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;default/&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.default&quot;/&gt;&#10;&lt;/sourceContainers&gt;&#10;&lt;/sourceLookupDirector&gt;&#10;"/>
+<booleanAttribute key="org.eclipse.php.debug.core.OpenInBrowser" value="true"/>
+<intAttribute key="org.eclipse.php.debug.core.PHP_Port" value="10137"/>
+<stringAttribute key="org.eclipse.php.debug.core.PHP_Project" value="/oc-server3"/>
+<booleanAttribute key="org.eclipse.php.debug.core.RunWithDebugInfo" value="true"/>
+<stringAttribute key="org.eclipse.php.debug.core.SSHTunnelPassword" value=""/>
+<stringAttribute key="org.eclipse.php.debug.core.SSHTunnelUserName" value=""/>
+<booleanAttribute key="org.eclipse.php.debug.core.UseSSHTunnel" value="false"/>
+<stringAttribute key="org.eclipse.php.debug.coreconfiguration_delegate_class" value="org.eclipse.php.internal.debug.core.launching.XDebugWebLaunchConfigurationDelegate"/>
+<stringAttribute key="org.eclipse.php.debug.corephp_debugger_id" value="org.eclipse.php.debug.core.xdebugDebugger"/>
+</launchConfiguration>
