@@ -1,0 +1,51 @@
+Hallo opencaching Entwickler!
+
+Die opencache Applikation ist wirklich toll gelungen, sodass ich Sie für ein NGO Zweck entfremden möchte.
+
+Als "bei Produkt" werden 2 docker Images entstehen die euch vielleicht auch interessieren. Diese beinhalten automatisiert eine aktuelle Version vom oc Server. Dies sehe ich als unser Beitrag zurück an opencaching, da diese Techniken auch für euch interessant sein könnten.
+Abgesehen von die "Automatische" Kontrolle der Installation Beschreibung ;-) die ja nicht mehr ganz aktuell ist....
+
+Für die es nicht wissen: Docker eine super-schlanke und sehr schnelle vm Technik die Ressourcen teilt statt sie zu besetzen.
+https://www.docker.com/
+
+Das erste Image beinhaltet den oc Server frisch installiert, mit die Österreich Geographie importiert. (auf Wunsch mach ich auch eine mit die deutsche oder beide)
+
+Das zweite baut auf das erste auf hat aber xdebug installiert um die php Applikation remote Debuggen zu können.
+
+Die Images sind hier zu finden:
+
+https://hub.docker.com/u/ritchiegithub/
+
+So jetzt zu meine eigentliche Frage....
+
+Ich habe angefangen zu versuchen die Applikation zum laufen zu bekommen (selber bin ich Java Entwickler), stoße aber gegen ein Problem wo ich Hilfe brauchen täte.
+
+Wenn ich mich anmelde versuche kommt er erfolgreich in:
+    if ($retval == LOGIN_OK) {
+        $tpl->redirect('login.php?action=cookieverify&target=' . urlencode($target));
+    }
+also Login ok und redirect nach die Seite, soweit so gut. jetzt kommt er nochmals in login.php, wieder alles ok und
+    $tpl->redirect($target);
+redirect nach myhome.php und hier geht s jetzt schief.
+    $login->verify();
+
+    if ($login->userid == 0) {
+        $tpl->redirect('login.php?target=myhome.php');
+    }
+Da kommt kommt $login->userid = 0 also zurück zur Login Seite..... Beim Debuggen in verify steigt er hier aus
+    if ($this->verified == true) {
+        return;
+    }
+Also irgendwie weiß er nur halb das ein User angemeldet ist, wenn ich die werte im Debugger verändere komme ich auch erheblich weiter.
+
+Ich verwende die stable branch und eclipse-php um zu Debuggen.
+
+meine verwendete repositories:
+
+https://github.com/VereinGegenTierfabriken/oc-server3.git
+https://github.com/VereinGegenTierfabriken/ocdocker.git
+https://github.com/VereinGegenTierfabriken/ocdocker-xdebug.git
+
+Danke in voraus für jede Hilfe!!!
+
+Ritchie
